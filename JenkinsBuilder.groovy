@@ -1,3 +1,3 @@
-@Library('CommonLib@master') _
-def common = new com.lib.JenkinsDockerBuilder()
+@Library('jenkins-global-library@feature/kube-slave') _
+def common = new JenkinsCommonDockerBuildPipeline()
 common.runPipeline()
